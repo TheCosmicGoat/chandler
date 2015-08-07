@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "slotsautodescribe.h"
 #include "highlighter.h"
 
 namespace Ui {
@@ -20,9 +21,16 @@ private:
     Ui::MainWindow *ui;
     Highlighter* _highlighter;
 
-public slots:
-    void fileMenu(QAction* action);
+private slots:
+    void _newReview();
+    void _doGameReview();
+    void _doRngReview();
+    void _changeLandFlag(bool flag);
+    void _autoFillDescription();
 
+public slots:
+    void fileMenu(QAction *action);
+    void setDescription(const QString& string);
 
 };
 

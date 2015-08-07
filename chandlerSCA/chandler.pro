@@ -17,10 +17,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     codeeditor.cpp \
-    highlighter.cpp
+    highlighter.cpp \
+    slotsautodescribe.cpp
 
 HEADERS  += mainwindow.h \
     codeeditor.h \
-    highlighter.h
+    highlighter.h \
+    slotsautodescribe.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    slotsautodescribe.ui
